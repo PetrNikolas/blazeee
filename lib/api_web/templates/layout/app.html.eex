@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Main tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Hello Api!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <!-- Title -->
+    <title>Blazeee</title>
+    <!-- Meta Tags-->
+    <meta name="description" content="Blazeee: Full-Stack solution for rapid development.">
+    <meta name="author" content="Petr Nikolas">
+    <meta http-equiv="Content-language" content="en">
+    <meta name='reply-to' content='hello@petrnikolas.com'>
+    <meta name='url' content=''>
+    <meta name='identifier-URL' content=''>
+    <!-- OG Meta tags -->
+    <meta property="og:title" content="Blazeee">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Blazeee: Full-Stack solution for rapid development.">
+    <meta property="og:site_name" content="">
+    <!-- Twitter Meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blazeee">
+    <meta name="twitter:description" content="Blazeee: Full-Stack solution for rapid development.">
+    <meta name="twitter:image" content="">
+    <!-- MS Application -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="">
+    <!-- Favicon -->
+    <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+    <!-- CSS -->
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
-
   <body>
     <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
-
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
-
-    </div> <!-- /container -->
+    </div>
+    <!-- JS -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

@@ -2,6 +2,8 @@
 
 Blazeee: Full-Stack solution for rapid development.
 
+Version: "0.0.1"
+
 ## Prerequisites
 
 * [Elixir 1.4 or later](https://elixir-lang.org/)
