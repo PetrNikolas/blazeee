@@ -4,15 +4,15 @@ Blazeee: Full-Stack solution for rapid development.
 Version: "0.0.2"
 
 ## Prerequisites
-* [Elixir 1.4 or later](https://elixir-lang.org/)
-* [Erlang 18 or later](https://www.erlang.org/)
-* [Phoenix framework](https://phoenixframework.org/)
-* [Node.js (>= 5.0.0)](https://nodejs.org/en/)
-* [PostgreSQL](https://www.postgresql.org/)
+  * [Elixir 1.4 or later](https://elixir-lang.org/)
+  * [Erlang 18 or later](https://www.erlang.org/)
+  * [Phoenix framework](https://phoenixframework.org/)
+  * [Node.js (>= 5.0.0)](https://nodejs.org/en/)
+  * [PostgreSQL](https://www.postgresql.org/)
 
 ## Libs
-* [Bcrypt](https://github.com/riverrun/bcrypt_elixir)
-* [Corsica](https://github.com/whatyouhide/corsica)
+  * [Bcrypt](https://github.com/riverrun/bcrypt_elixir)
+  * [Corsica](https://github.com/whatyouhide/corsica)
 
 ## Setup project
 To start your Phoenix server:
