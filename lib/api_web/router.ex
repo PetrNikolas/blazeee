@@ -16,14 +16,13 @@ defmodule ApiWeb.Router do
   # Homepage route
   scope "/", ApiWeb do
     pipe_through :browser # Use the default browser stack
-
     get "/", PageController, :index
-    resources "/users", UserController, only: [:show]
   end
 
   # API routes
   scope "/api", ApiWeb, as: :api do
     pipe_through :api
+
     scope "/v1", Api.V1, as: :v1 do
       resources "/users", UserController
     end
