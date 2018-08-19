@@ -7,7 +7,8 @@ defmodule Api.Accounts.User do
     field :email, :string
     field :first_name, :string
     field :last_name, :string
-    field :password, :string
+    field :password, :string, virtual: true
+    field :password_hash, :string
     field :role, :integer
     field :username, :string
 
@@ -21,5 +22,18 @@ defmodule Api.Accounts.User do
     |> validate_required([:first_name, :last_name, :email, :username, :password, :role])
     |> unique_constraint(:email)
     |> unique_constraint(:username)
+    |> put_password_hash()
+  end
+
+  defp put_password_hash(
+         %Ecto.Changeset{
+           valid?: true, changes: %{password: password}
+         } = changeset
+       ) do
+    change(changeset, password_hash: Bcrypt.hash_pwd_salt(password))
+  end
+
+  defp put_password_hash(changeset) do
+    changeset
   end
 end

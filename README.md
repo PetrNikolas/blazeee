@@ -10,6 +10,10 @@ Version: "0.0.1"
 * [Node.js (>= 5.0.0)](https://nodejs.org/en/)
 * [PostgreSQL](https://www.postgresql.org/)
 
+## Libs
+* [Bcrypt](https://github.com/riverrun/bcrypt_elixir)
+* [Corsica](https://github.com/whatyouhide/corsica)
+
 ## Setup project
 To start your Phoenix server:
 
@@ -35,6 +39,10 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Run `mix phoenix.new`         # Create a new Phoenix v1.1.2 application
   * Run `mix phoenix.routes`      # Prints all routes
   * Run `mix phoenix.server`      # Starts applications and their servers
+
+## Database migrations
+  * Run `mix ecto.gen.migration add_password_hash_users`  # Add a new column to the exist table
+  * Run `mix ecto.gen.migration`                          # Migrate database
 
 ## Learn more about Phoenix framework
   * Official website: http://www.phoenixframework.org/

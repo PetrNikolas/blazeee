@@ -15,3 +15,6 @@ config :api, Api.Repo,
   database: "blazeee_api_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+# Bcrypt for hash user's password
+config :bcrypt_elixir, :log_rounds, 4

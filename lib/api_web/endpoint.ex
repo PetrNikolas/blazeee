@@ -37,6 +37,15 @@ defmodule ApiWeb.Endpoint do
     key: "_api_key",
     signing_salt: "tf/XrTgb"
 
+  # Enable CORS for frontend application
+  plug(
+    Corsica,
+    origins: "*",
+    log: [rejected: :error, invalid: :warn, accepted: :debug],
+    allow_headers: ["content-type"],
+    allow_credentials: true
+  )
+
   plug ApiWeb.Router
 
   @doc """
