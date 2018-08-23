@@ -24,7 +24,8 @@ defmodule ApiWeb.Router do
     pipe_through :api
 
     scope "/v1", Api.V1, as: :v1 do
-      resources "/users", UserController
+      post "/sign_up", UserController, :create
+      post "/sign_in", UserController, :sign_in
     end
   end
 end

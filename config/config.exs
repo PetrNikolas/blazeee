@@ -22,6 +22,11 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:user_id]
 
+# Guardian config
+config :api, ApiWeb.Guardian,
+  issuer: "myApi",
+  secret_key: "s6O36Q2DtK/sODiSaOtrHROakNiEHxqUkjnVGw6cvTk33wR0wo1e4s7et9X5NRn3"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
