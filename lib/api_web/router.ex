@@ -1,6 +1,8 @@
 defmodule ApiWeb.Router do
   use ApiWeb, :router
 
+  alias ApiWeb.Guardian
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -11,6 +13,10 @@ defmodule ApiWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+  end
+
+  pipeline :jwt_authenticated do
+    plug Guardian.AuthPipeline
   end
 
   # Homepage route
@@ -26,6 +32,14 @@ defmodule ApiWeb.Router do
     scope "/v1", Api.V1, as: :v1 do
       post "/sign_up", UserController, :create
       post "/sign_in", UserController, :sign_in
+    end
+  end
+
+  scope "/api", ApiWeb, as: :api do
+    pipe_through [:api, :jwt_authenticated]
+
+    scope "/v1", Api.V1, as: :v1 do
+      get "/current_user", UserController, :show
     end
   end
 end

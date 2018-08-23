@@ -12,7 +12,7 @@ defmodule ApiWeb.Guardian do
 
   def resource_from_claims(claims) do
     id = claims["sub"]
-    resource = ApiWeb.Accounts.get_user!(id)
+    resource = Api.Accounts.get_user!(id)
     {:ok,  resource}
   end
 

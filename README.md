@@ -1,7 +1,7 @@
 # Blazeee
 Blazeee: Full-Stack solution for rapid development.
 
-Version: "0.0.2"
+Version: "0.0.3"
 
 ## Prerequisites
   * [Elixir 1.4 or later](https://elixir-lang.org/)
@@ -13,6 +13,8 @@ Version: "0.0.2"
 ## Libs
   * [Bcrypt](https://github.com/riverrun/bcrypt_elixir)
   * [Corsica](https://github.com/whatyouhide/corsica)
+  * [Comeonin](https://github.com/riverrun/comeonin)
+  * [Guardian](https://github.com/ueberauth/guardian)
 
 ## Setup project
 To start your Phoenix server:
