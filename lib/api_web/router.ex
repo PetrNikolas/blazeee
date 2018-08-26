@@ -43,6 +43,7 @@ defmodule ApiWeb.Router do
 
       get "/current_user", UserController, :show
       get "/users", UserController, :index
+      delete "/users/:id", UserController, :delete
     end
   end
 end
