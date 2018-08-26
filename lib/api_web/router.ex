@@ -41,8 +41,9 @@ defmodule ApiWeb.Router do
     scope "/v1", Api.V1, as: :v1 do
       pipe_through [:api, :jwt_authenticated]
 
-      get "/current_user", UserController, :show
+      get "/current_user", UserController, :get_current_user
       get "/users", UserController, :index
+      get "/users/:id", UserController, :show
       put "/users/:id", UserController, :update
       delete "/users/:id", UserController, :delete
     end
