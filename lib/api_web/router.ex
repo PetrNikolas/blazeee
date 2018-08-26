@@ -15,13 +15,15 @@ defmodule ApiWeb.Router do
     plug :accepts, ["json"]
   end
 
+  # Use authorization via Guardian
   pipeline :jwt_authenticated do
     plug Guardian.AuthPipeline
   end
 
   # Homepage route
   scope "/", ApiWeb do
-    pipe_through :browser # Use the default browser stack
+    # Use the default browser stack
+    pipe_through :browser
     get "/", PageController, :index
   end
 
