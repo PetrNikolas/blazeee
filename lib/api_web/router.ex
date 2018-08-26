@@ -27,18 +27,18 @@ defmodule ApiWeb.Router do
 
   # API routes
   scope "/api", ApiWeb, as: :api do
-    pipe_through :api
-
+    # Endpoints without authorization
     scope "/v1", Api.V1, as: :v1 do
+      pipe_through :api
+
       post "/sign_up", UserController, :create
       post "/sign_in", UserController, :sign_in
     end
-  end
 
-  scope "/api", ApiWeb, as: :api do
-    pipe_through [:api, :jwt_authenticated]
-
+    # Endpoints with authorization
     scope "/v1", Api.V1, as: :v1 do
+      pipe_through [:api, :jwt_authenticated]
+
       get "/current_user", UserController, :show
     end
   end
