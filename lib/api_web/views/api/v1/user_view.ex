@@ -16,7 +16,6 @@ defmodule ApiWeb.Api.V1.UserView do
       last_name: user.last_name,
       email: user.email,
       username: user.username,
-      password_hash: user.password,
       role: user.role}
   end
 
