@@ -28,6 +28,7 @@ defmodule Api.Accounts.User do
     |> validate_required([:first_name, :last_name, :email, :username, :password, :password_confirmation, :role])
     |> validate_format(:email, ~r/@/)
     |> validate_length(:password, min: 8)
+    |> validate_length(:username, min: 4)
     |> validate_confirmation(:password)
     |> unique_constraint(:email)
     |> unique_constraint(:username)
