@@ -1,7 +1,7 @@
 # Blazeee
 Blazeee: Full-Stack solution for rapid development.
 
-Version: "0.0.5"
+Version: "0.0.6"
 
 ## Prerequisites
   * [Elixir 1.4 or later](https://elixir-lang.org/)
@@ -15,6 +15,7 @@ Version: "0.0.5"
   * [Corsica](https://github.com/whatyouhide/corsica)
   * [Comeonin](https://github.com/riverrun/comeonin)
   * [Guardian](https://github.com/ueberauth/guardian)
+  * [Credo](https://github.com/rrrene/credo)
 
 ## Setup project
 To start your Phoenix server:
@@ -44,6 +45,10 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 ## Database migrations
   * Run `mix ecto.gen.migration add_password_hash_users`  # Add a new column to the exist table
   * Run `mix ecto.gen.migration`                          # Migrate database
+
+## Code analysis with Credo
+  * To run credo in the current project, just type: `mix credo`. This will run the code analysis and suggest places to edit your code.
+  * If you want to enforce a style guide and need a more traditional linting experience, try `mix credo --strict` and continue reading in the Configuration section.
 
 ## Learn more about Phoenix framework
   * Official website: http://www.phoenixframework.org/
