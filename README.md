@@ -1,7 +1,7 @@
 # Blazeee
 Blazeee: Full-Stack solution for rapid development.
 
-Version: "0.0.4"
+Version: "0.0.5"
 
 ## Prerequisites
   * [Elixir 1.4 or later](https://elixir-lang.org/)
@@ -18,7 +18,6 @@ Version: "0.0.4"
 
 ## Setup project
 To start your Phoenix server:
-
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Install Node.js dependencies with `cd assets && npm install`
