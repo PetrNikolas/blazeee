@@ -1,0 +1,35 @@
+db: &DB
+  image: postgres:9.4.5
+  ports:
+    - 5432
+  environment:
+    POSTGRES_USER: 'ENTER YOUR POSTGRES USER'
+    POSTGRES_PASSWORD: 'ENTER YOUR POSTGRES PASSWORD'
+
+# Separate database for testing (since it gets deleted)
+dbTest:
+  <<: *DB
+
+local:
+  build: .
+  command: sh -c "mix phoenix.server"
+  ports:
+    - 4000
+  environment: &ENV
+    VIRTUAL_HOST: api.local.dockito.org
+    VIRTUAL_PORT: 4000
+    DATABASE_URL: ecto://user:password@db/blazeee_api_dev
+  volumes:
+      - ./:/usr/src/app
+  links:
+    - db:db
+
+test:
+  build: .
+  command: sh -c "mix test"
+  environment:
+    DATABASE_URL: ecto://user:password@db/blazeee_api_test
+  volumes:
+      - ./:/usr/src/app
+  links:
+    - dbTest:db
