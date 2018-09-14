@@ -1,7 +1,7 @@
 # Blazeee
 Blazeee: Full-Stack solution for rapid development.
 
-Version: "0.0.6"
+Version: 0.0.6
 
 ## Prerequisites
   * [Elixir 1.4 or later](https://elixir-lang.org/)
@@ -9,6 +9,8 @@ Version: "0.0.6"
   * [Phoenix framework](https://phoenixframework.org/)
   * [Node.js (>= 5.0.0)](https://nodejs.org/en/)
   * [PostgreSQL](https://www.postgresql.org/)
+
+If you want also Docker and Travis.
 
 ## Libs
   * [Bcrypt](https://github.com/riverrun/bcrypt_elixir)
