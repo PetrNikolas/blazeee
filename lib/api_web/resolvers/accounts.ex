@@ -1,4 +1,5 @@
 defmodule ApiWeb.Resolvers.Accounts do 
+  # Get all users  
   def get_users(_parent, _args, _resolution) do
     case Api.Accounts.list_users() do
       nil ->
@@ -8,6 +9,7 @@ defmodule ApiWeb.Resolvers.Accounts do
     end
   end
 
+  # Find user by ID
   def find_user(_parent, %{id: id}, _resolution) do
     case Api.Accounts.get_user!(id) do
       nil ->

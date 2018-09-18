@@ -50,6 +50,9 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Run `mix ecto.gen.migration add_password_hash_users`  # Add a new column to the exist table
   * Run `mix ecto.gen.migration`                          # Migrate database
 
+## Database seeds
+  * Run `mix ecto.setup`  # Add/seed data to the database
+
 ## Code analysis with Credo
   * To run credo in the current project, just type: `mix credo`. This will run the code analysis and suggest places to edit your code.
   * If you want to enforce a style guide and need a more traditional linting experience, try `mix credo --strict` and continue reading in the Configuration section.
