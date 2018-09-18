@@ -54,6 +54,11 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * To run credo in the current project, just type: `mix credo`. This will run the code analysis and suggest places to edit your code.
   * If you want to enforce a style guide and need a more traditional linting experience, try `mix credo --strict` and continue reading in the Configuration section.
 
+## GraphQL
+  * Navigate to `localhost:4000/api/v1/graphiql`. 
+  * You should be greeted with a pretty prompt for running graphql queries on the left, with responses on the right. 
+  * In the top right, click “Docs” to inspect your API.
+
 ## Learn more about Phoenix framework
   * Official website: http://www.phoenixframework.org/
   * Guides: http://phoenixframework.org/docs/overview

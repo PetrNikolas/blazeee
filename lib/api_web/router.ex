@@ -49,12 +49,11 @@ defmodule ApiWeb.Router do
     end
   end
 
-  forward "/graphql",
-  Absinthe.Plug,
-  schema: ApiWeb.Schema
+  # Endpoint for GraphQL
+  forward "/graphql", Absinthe.Plug,
+    schema: ApiWeb.Schema
   # For the GraphiQL interactive interface, a must-have for happy frontend devs.
-  forward "/graphiql",
-  Absinthe.Plug.GraphiQL,
-  schema: ApiWeb.Schema,
-  interface: :simple
+  forward "/api/v1/graphiql", Absinthe.Plug.GraphiQL,
+    schema: ApiWeb.Schema,
+    interface: :simple
 end
