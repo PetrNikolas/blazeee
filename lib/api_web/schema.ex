@@ -7,6 +7,11 @@ defmodule ApiWeb.Schema do
   alias ApiWeb.Resolvers
 
   query do
+    @desc "Get all users"
+    field :users, list_of(:user) do
+      resolve &Resolvers.Accounts.get_users/3
+    end
+
     @desc "Get a user"
     field :user, :user do
       arg :id, non_null(:id)
