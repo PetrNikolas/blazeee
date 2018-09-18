@@ -1,7 +1,7 @@
 # Blazeee
 Blazeee: Full-Stack solution for rapid development.
 
-Version: 0.0.6
+Version: 0.1.0
 
 ## Prerequisites
   * [Elixir 1.4 or later](https://elixir-lang.org/)
@@ -13,11 +13,13 @@ Version: 0.0.6
 If you want also Docker and Travis.
 
 ## Libs
+  * [Absinthe](https://github.com/absinthe-graphql/absinthe)
   * [Bcrypt](https://github.com/riverrun/bcrypt_elixir)
   * [Corsica](https://github.com/whatyouhide/corsica)
   * [Comeonin](https://github.com/riverrun/comeonin)
   * [Guardian](https://github.com/ueberauth/guardian)
   * [Credo](https://github.com/rrrene/credo)
+  * [Poison](https://github.com/devinus/poison)
 
 ## Setup project
 To start your Phoenix server:
