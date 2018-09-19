@@ -1,12 +1,8 @@
 defmodule ApiWeb.Resolvers.Accounts do 
   # Get all users  
   def get_users(_parent, _args, _resolution) do
-    case Api.Accounts.list_users() do
-      nil ->
-        {:error, "Users are not available."}
-      users ->
-        {:ok, users}
-    end
+    users = Api.Accounts.list_users()
+    {:ok, users}
   end
 
   # Find user by ID

@@ -8,7 +8,7 @@ defmodule ApiWeb.Schema do
 
   query do
     @desc "Get all users"
-    field :users, list_of(:user) do
+    field :users, non_null(list_of(non_null(:user))) do
       resolve &Resolvers.Accounts.get_users/3
     end
 
