@@ -42,6 +42,7 @@ defmodule Api.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:absinthe, "~> 1.4.0"},
+      {:absinthe_ecto, git: "https://github.com/absinthe-graphql/absinthe_ecto.git"},
       {:absinthe_plug, "~> 1.4"},
       {:poison, "~> 3.1.0"},
       {:comeonin, "~> 4.0"},
