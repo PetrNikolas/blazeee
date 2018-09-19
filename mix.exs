@@ -15,7 +15,6 @@ defmodule Api.Mixfile do
   end
 
   # Configuration for the OTP application.
-  #
   # Type `mix help compile.app` for more information.
   def application do
     [
@@ -29,7 +28,6 @@ defmodule Api.Mixfile do
   defp elixirc_paths(_),     do: ["lib"]
 
   # Specifies your project dependencies.
-  #
   # Type `mix help deps` for examples and options.
   defp deps do
     [
