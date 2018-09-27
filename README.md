@@ -1,7 +1,7 @@
 # Blazeee
 Blazeee: starter kit for rapid development.
 
-Version: 0.1.4
+Version: 0.1.5
 
 ## Prerequisites
   * [Elixir 1.4 or later](https://elixir-lang.org/)
