@@ -10,8 +10,6 @@ Version: 0.1.4
   * [Node.js (>= 5.0.0)](https://nodejs.org/en/)
   * [PostgreSQL](https://www.postgresql.org/)
 
-If you want also Docker and Travis.
-
 ## Libs
   * [Absinthe](https://github.com/absinthe-graphql/absinthe)
   * [Bcrypt](https://github.com/riverrun/bcrypt_elixir)
