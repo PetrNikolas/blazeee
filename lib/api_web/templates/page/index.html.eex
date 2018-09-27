@@ -1,7 +1,7 @@
 <!-- Root/content of app -->
 <div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}!", name: "Blazeee" %></h2>
-  <p class="lead">Blazeee: Full-Stack solution for rapid development.</p>
+  <p class="lead">Blazeee: starter kit for rapid development.</p>
 </div>
 
 <div id=”app”></div>

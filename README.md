@@ -1,5 +1,5 @@
 # Blazeee
-Blazeee: Full-Stack solution for rapid development.
+Blazeee: starter kit for rapid development.
 
 Version: 0.1.4
 
