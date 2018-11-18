@@ -1,7 +1,7 @@
 # Blazeee
 Blazeee: starter kit for rapid development.
 
-Version: 0.1.5
+Version: 0.1.6
 
 ## Prerequisites
   * [Elixir 1.4 or later](https://elixir-lang.org/)
@@ -18,6 +18,7 @@ Version: 0.1.5
   * [Guardian](https://github.com/ueberauth/guardian)
   * [Credo](https://github.com/rrrene/credo)
   * [Poison](https://github.com/devinus/poison)
+  * [LogViewer](https://github.com/shufo/log_viewer)
 
 ## Setup project
 To start your Phoenix server:

@@ -3,6 +3,9 @@ defmodule ApiWeb.Endpoint do
 
   socket "/socket", ApiWeb.UserSocket
 
+  # An Web based Log Viewer for Elixir and Phoenix
+  socket("/log_viewer", LogViewer.PhoenixSocket)
+
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
