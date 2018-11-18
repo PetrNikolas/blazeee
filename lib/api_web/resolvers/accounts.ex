@@ -14,4 +14,9 @@ defmodule ApiWeb.Resolvers.Accounts do
         {:ok, user}
     end
   end
+
+  # Create user - sign up
+  def create(params, _info) do
+    Api.Accounts.create_user(params)
+  end
 end
