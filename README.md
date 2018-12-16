@@ -43,15 +43,32 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 ## Generate entities with Ecto
 
 ```sh
-* Run `mix phoenix.digest`      # Digests and compress static files
-* Run `mix phoenix.gen.channel` # Generates a Phoenix channel
-* Run `mix phoenix.gen.html`    # Generates controller, model and views for an HTML based resource
-* Run `mix phoenix.gen.json`    # Generates a controller and model for a JSON based resource
-* Run `mix phoenix.gen.model`   # Generates an Ecto model
-* Run `mix phoenix.gen.secret`  # Generates a secret
-* Run `mix phoenix.new`         # Create a new Phoenix v1.1.2 application
-* Run `mix phoenix.routes`      # Prints all routes
-* Run `mix phoenix.server`      # Starts applications and their servers
+# Digests and compress static files
+mix phoenix.digest
+
+# Generates a Phoenix channel
+mix phoenix.gen.channel
+
+# Generates controller, model and views for an HTML based resource
+mix phoenix.gen.html
+
+# Generates a controller and model for a JSON based resource
+mix phoenix.gen.json
+
+# Generates an Ecto model
+mix phoenix.gen.model
+
+# Generates a secret
+mix phoenix.gen.secret
+
+# Create a new Phoenix v1.1.2 application
+mix phoenix.new
+
+# Prints all routes
+mix phoenix.routes
+
+# Starts applications and their servers
+mix phoenix.server
 ```
 
 ## Database migrations
