@@ -63,7 +63,12 @@ Or you can run `mix ecto.setup` for setup all process.
   * You should be greeted with a pretty prompt for running graphql queries on the left, with responses on the right. 
   * In the top right, click “Docs” to inspect your API.
 
+## Documentation
+
+* You can see [docs](./docs/ecto.md).
+
 ## Learn more about Phoenix framework
+
   * Official website: http://www.phoenixframework.org/
   * Guides: http://phoenixframework.org/docs/overview
   * Docs: https://hexdocs.pm/phoenix
