@@ -74,14 +74,18 @@ mix phoenix.server
 ## Database migrations
 
 ```sh
-* Run `mix ecto.gen.migration add_password_hash_users`  # Add a new column to the exist table
-* Run `mix ecto.gen.migration`                          # Migrate database
+# Add a new column to the exist table
+mix ecto.gen.migration add_password_hash_users
+
+# Migrate database
+mix ecto.gen.migration
 ```
 
 ### Database seeds
 
 ```sh
-* Run `mix run priv/repo/seeds.exs`  # Add/seed data to the database
+# Add/seed data to the database
+mix run priv/repo/seeds.exs
 ```
 
 Or you can run `mix ecto.setup` for setup all process.
