@@ -2,7 +2,7 @@
 
 Blazeee: starter kit for rapid development.
 
-Version: 0.1.7
+Version: 0.1.8
 
 ## Prerequisites
 
