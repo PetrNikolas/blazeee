@@ -44,31 +44,31 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 
 ```sh
 # Digests and compress static files
-mix phoenix.digest
+mix phx.digest
 
 # Generates a Phoenix channel
-mix phoenix.gen.channel
+mix phx.gen.channel
 
 # Generates controller, model and views for an HTML based resource
-mix phoenix.gen.html
+mix phx.gen.html
 
 # Generates a controller and model for a JSON based resource
-mix phoenix.gen.json
+mix phx.gen.json
 
 # Generates an Ecto model
-mix phoenix.gen.model
+mix phx.gen.model
 
 # Generates a secret
-mix phoenix.gen.secret
+mix phx.gen.secret
 
-# Create a new Phoenix v1.1.2 application
-mix phoenix.new
+# Create a new Phoenix application
+mix phx.new
 
 # Prints all routes
-mix phoenix.routes
+mix phx.routes
 
 # Starts applications and their servers
-mix phoenix.server
+mix phx.server
 ```
 
 ## Database migrations

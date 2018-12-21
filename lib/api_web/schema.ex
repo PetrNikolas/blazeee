@@ -28,7 +28,7 @@ defmodule ApiWeb.Schema do
       arg(:password, non_null(:string))
       arg(:password_confirmation, non_null(:string))
 
-      resolve(&Resolvers.Accounts.create/3)
+      resolve(&Resolvers.Accounts.create/2)
     end
   end
 end
