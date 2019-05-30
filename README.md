@@ -29,7 +29,6 @@ To start your Phoenix server:
 
 * Install dependencies with `mix deps.get`
 * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-* Install Node.js dependencies with `cd assets && npm install`
 * Start Phoenix endpoint with `mix phx.server`
 
 NOTE: These types of errors can usually be resolved by running mix clean. You may also see this type of error during Live code reload in dev. It case, try restarting the Phoenix.Server, and if that does not help, run mix clean
