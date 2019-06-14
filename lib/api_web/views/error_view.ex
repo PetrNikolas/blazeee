@@ -2,15 +2,15 @@ defmodule ApiWeb.ErrorView do
   use ApiWeb, :view
 
   def render("404.json", _assigns) do
-    %{errors: %{detail: "Page not found"}}
+    %{errors: %{detail: "Endpoint not found!"}}
   end
 
   def render("422.json", _assigns) do
-    %{errors: %{detail: "Bad request"}}
+    %{errors: %{detail: "Bad request, sorry :("}}
   end
 
   def render("500.json", _assigns) do
-    %{errors: %{detail: "Internal server error"}}
+    %{errors: %{detail: "Internal server error, sorry :("}}
   end
 
   # In case no render clause matches or no
