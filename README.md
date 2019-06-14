@@ -89,6 +89,13 @@ mix run priv/repo/seeds.exs
 
 Or you can run `mix ecto.setup` for setup all process.
 
+## Tests
+
+```sh
+# Run tests
+mix test
+```
+
 ## Code analysis with Credo
 
 * To run credo in the current project, just type: `mix credo`. This will run the code analysis and suggest places to edit your code.
@@ -99,6 +106,10 @@ Or you can run `mix ecto.setup` for setup all process.
 * Navigate to `localhost:4000/api/v1/graphiql`.
 * You should be greeted with a pretty prompt for running graphql queries on the left, with responses on the right.
 * In the top right, click “Docs” to inspect your API.
+
+## CI/CD
+
+You can use Gitlab CI or Travis CI (both files are here - in root of project).
 
 ## Documentation
 
