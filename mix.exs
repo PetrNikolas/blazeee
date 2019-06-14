@@ -52,6 +52,7 @@ defmodule Api.Mixfile do
       {:corsica, "~> 1.0"},
       {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false},
       {:httpoison, "~> 1.4"},
+      {:git_hooks, "~> 0.3.0", only: :dev, runtime: false},
       {:log_viewer, "~> 0.1.0", only: [:dev]}
     ]
   end

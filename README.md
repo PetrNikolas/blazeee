@@ -22,6 +22,8 @@ Version: 0.1.9
 * [Credo](https://github.com/rrrene/credo)
 * [Poison](https://github.com/devinus/poison)
 * [LogViewer](https://github.com/shufo/log_viewer)
+* [httpoison](https://github.com/edgurgel/httpoison)
+* [GitHooks](https://github.com/qgadrian/elixir_git_hooks)
 
 ## Setup project
 
