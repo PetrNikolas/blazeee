@@ -1,6 +1,8 @@
-# Ecto Best Practices
+# DOCUMENTATION
 
-## Avoiding N+1 Queries
+## Ecto Best Practices
+
+### Avoiding N+1 Queries
 
 In general, you want to make sure that when accessing Ecto associations that you preload the data in the top level resolver functions to avoid N+1 queries.
 
@@ -90,7 +92,7 @@ Not only is this a very efficient way to query the data, it’s also 100% dynami
 
 We’ve made it easier and more flexible, however, with Elixir’s dataloader package.
 
-## Dataloader
+### Dataloader
 
 `Absinthe.Middleware.Batch` achieves a lot and, with some helpers, was the standard way to solve this problem for a long time. While batching still has a place, it has a few limitations that have driven the development of Dataloader. There are small scale annoyances like the limitation of only being able to batch one thing at a time in a field, or the fact that the API can get very verbose.
 
@@ -98,7 +100,7 @@ There’s also some larger scale issues however. Ecto has a fair number of quirk
 
 In time, people involved in larger projects have been able to build some abstractions, helpers, and conventions around the `Absinthe.Middleware.Batch` plugin that have done a good job of addressing these issues. That effort has been extracted into the Dataloader project, which also draws inspiration from similar projects in the GraphQL world.
 
-### Getting Started
+#### Getting Started
 
 Let’s jump straight in to getting Dataloader working, and then we’ll expand on what’s actually happening behind the scenes.
 
@@ -164,7 +166,7 @@ The plugins/0 function has been around for a while, and specifies what plugins t
 
 That’s it! If you run a GraphQL query that hits that field, it will be loaded efficiently without N+1.
 
-### Unpacking Dataloader
+#### Unpacking Dataloader
 
 The `data/0` function creates an Ecto data source, to which you pass your repo and a query function. This query function is called every time you want to load something, and provides an opportunity to apply arguments or set defaults. So for example if you always want to only load non-deleted posts you can do:
 

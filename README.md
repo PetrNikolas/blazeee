@@ -119,7 +119,7 @@ You can use Gitlab CI or Travis CI (both files are here - in root of project).
 
 ## Documentation
 
-* You can see [docs](./docs/ecto.md).
+* You can see [DOCUMENTATION](./DOCUMENTATION.md).
 
 ## Learn more about Phoenix framework
 
