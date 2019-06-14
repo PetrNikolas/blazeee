@@ -30,8 +30,10 @@ config :api, ApiWeb.Guardian,
 config :api, :phoenix_swagger,
   swagger_files: %{
     "priv/static/swagger.json" => [
-      router: ApiWeb.Router,     # phoenix routes will be converted to swagger paths
-      endpoint: ApiWeb.Endpoint  # (optional) endpoint config used to set host, port and https schemes.
+      # phoenix routes will be converted to swagger paths
+      router: ApiWeb.Router,
+      # (optional) endpoint config used to set host, port and https schemes.
+      endpoint: ApiWeb.Endpoint
     ]
   }
 
