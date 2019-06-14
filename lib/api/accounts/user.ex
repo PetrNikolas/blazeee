@@ -5,7 +5,6 @@ defmodule Api.Accounts.User do
   # Import external lib
   import Comeonin.Bcrypt, only: [hashpwsalt: 1]
 
-
   schema "users" do
     field :email, :string
     field :first_name, :string
@@ -24,8 +23,24 @@ defmodule Api.Accounts.User do
   @doc false
   def changeset(user, attrs) do
     user
-    |> cast(attrs, [:first_name, :last_name, :email, :username, :password, :password_confirmation, :role])
-    |> validate_required([:first_name, :last_name, :email, :username, :password, :password_confirmation, :role])
+    |> cast(attrs, [
+      :first_name,
+      :last_name,
+      :email,
+      :username,
+      :password,
+      :password_confirmation,
+      :role
+    ])
+    |> validate_required([
+      :first_name,
+      :last_name,
+      :email,
+      :username,
+      :password,
+      :password_confirmation,
+      :role
+    ])
     |> validate_format(:email, ~r/@/)
     |> validate_length(:password, min: 8)
     |> validate_length(:username, min: 4)
@@ -37,11 +52,11 @@ defmodule Api.Accounts.User do
 
   defp put_password_hash(changeset) do
     case changeset do
-      %Ecto.Changeset{valid?: true, changes: %{password: pass}}
-        ->
-          put_change(changeset, :password_hash, hashpwsalt(pass))
+      %Ecto.Changeset{valid?: true, changes: %{password: pass}} ->
+        put_change(changeset, :password_hash, hashpwsalt(pass))
+
       _ ->
-          changeset
+        changeset
     end
   end
 end

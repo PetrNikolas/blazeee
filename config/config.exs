@@ -14,8 +14,7 @@ config :api, ApiWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "giSKRtc/lpc8nhWE3HQjJisu4gq6oRc3PX9a1aszU5sia/NFCjL8vO2sCtHN6noR",
   render_errors: [view: ApiWeb.ErrorView, accepts: ~w(json)],
-  pubsub: [name: Api.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Api.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -29,4 +28,4 @@ config :api, ApiWeb.Guardian,
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"

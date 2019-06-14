@@ -6,9 +6,30 @@ defmodule Api.AccountsTest do
   describe "users" do
     alias Api.Accounts.User
 
-    @valid_attrs %{email: "some email", first_name: "some first_name", last_name: "some last_name", password: "some password", role: 42, username: "some username"}
-    @update_attrs %{email: "some updated email", first_name: "some updated first_name", last_name: "some updated last_name", password: "some updated password", role: 43, username: "some updated username"}
-    @invalid_attrs %{email: nil, first_name: nil, last_name: nil, password: nil, role: nil, username: nil}
+    @valid_attrs %{
+      email: "some email",
+      first_name: "some first_name",
+      last_name: "some last_name",
+      password: "some password",
+      role: 42,
+      username: "some username"
+    }
+    @update_attrs %{
+      email: "some updated email",
+      first_name: "some updated first_name",
+      last_name: "some updated last_name",
+      password: "some updated password",
+      role: 43,
+      username: "some updated username"
+    }
+    @invalid_attrs %{
+      email: nil,
+      first_name: nil,
+      last_name: nil,
+      password: nil,
+      role: nil,
+      username: nil
+    }
 
     def user_fixture(attrs \\ %{}) do
       {:ok, user} =

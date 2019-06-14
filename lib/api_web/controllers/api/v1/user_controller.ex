@@ -35,6 +35,7 @@ defmodule ApiWeb.Api.V1.UserController do
 
   def delete(conn, %{"id" => id}) do
     user = Accounts.get_user!(id)
+
     with {:ok, %User{}} <- Accounts.delete_user(user) do
       send_resp(conn, :no_content, "")
     end
@@ -44,6 +45,7 @@ defmodule ApiWeb.Api.V1.UserController do
     case Accounts.token_sign_in(email, password) do
       {:ok, token, _claims} ->
         conn |> render("jwt.json", jwt: token)
+
       _ ->
         {:error, :unauthorized}
     end

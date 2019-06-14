@@ -41,11 +41,10 @@ defmodule ApiWeb.Router do
   end
 
   # Endpoint for GraphQL
-  scope "/api" do 
+  scope "/api" do
     pipe_through [:api, :jwt_authenticated]
-    
-    forward "/graphql", Absinthe.Plug,
-      schema: ApiWeb.Schema
+
+    forward "/graphql", Absinthe.Plug, schema: ApiWeb.Schema
   end
 
   # For the GraphiQL interactive interface, a must-have for happy frontend devs.
