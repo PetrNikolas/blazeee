@@ -32,6 +32,10 @@ defmodule ApiWeb.Router do
     scope "/v1", Api.V1, as: :v1 do
       pipe_through [:api, :jwt_authenticated]
 
+      # Logs endpoint
+      post "/logs", LogsController, :index
+
+      # Users endpoints
       get "/users", UserController, :index
       get "/user", UserController, :get_current_user
       get "/user/:id", UserController, :show

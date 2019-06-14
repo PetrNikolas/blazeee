@@ -51,6 +51,7 @@ defmodule Api.Mixfile do
       {:guardian, "~> 1.0"},
       {:corsica, "~> 1.0"},
       {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false},
+      {:httpoison, "~> 1.4"},
       {:log_viewer, "~> 0.1.0", only: [:dev]}
     ]
   end

@@ -96,6 +96,10 @@ Or you can run `mix ecto.setup` for setup all process.
 mix test
 ```
 
+## Code formatter
+
+* You can run code formatter with `mix format`.
+
 ## Code analysis with Credo
 
 * To run credo in the current project, just type: `mix credo`. This will run the code analysis and suggest places to edit your code.
