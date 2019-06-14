@@ -51,6 +51,15 @@ defmodule ApiWeb.Router do
     forward "/graphql", Absinthe.Plug, schema: ApiWeb.Schema
   end
 
+  def swagger_info do
+    %{
+      info: %{
+        version: "1.0",
+        title: "Blazeee"
+      }
+    }
+  end
+
   # For the GraphiQL interactive interface, a must-have for happy frontend devs.
   forward "/api/graphiql", Absinthe.Plug.GraphiQL,
     schema: ApiWeb.Schema,

@@ -7,7 +7,7 @@ defmodule Api.Mixfile do
       version: "0.1.9",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: [:phoenix, :gettext] ++ Mix.compilers(),
+      compilers: [:phoenix, :gettext, :phoenix_swagger] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
@@ -53,6 +53,8 @@ defmodule Api.Mixfile do
       {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false},
       {:httpoison, "~> 1.4"},
       {:git_hooks, "~> 0.3.0", only: :dev, runtime: false},
+      {:phoenix_swagger, "~> 0.8"},
+      {:ex_json_schema, "~> 0.5"},
       {:log_viewer, "~> 0.1.0", only: [:dev]}
     ]
   end

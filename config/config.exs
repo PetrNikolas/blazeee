@@ -26,6 +26,15 @@ config :api, ApiWeb.Guardian,
   issuer: "myApi",
   secret_key: "s6O36Q2DtK/sODiSaOtrHROakNiEHxqUkjnVGw6cvTk33wR0wo1e4s7et9X5NRn3"
 
+# Swagger
+config :api, :phoenix_swagger,
+  swagger_files: %{
+    "priv/static/swagger.json" => [
+      router: ApiWeb.Router,     # phoenix routes will be converted to swagger paths
+      endpoint: ApiWeb.Endpoint  # (optional) endpoint config used to set host, port and https schemes.
+    ]
+  }
+
 # Git hooks
 config :git_hooks,
   verbose: true,
