@@ -1,6 +1,6 @@
 # Blazeee
 
-Blazeee: starter kit for rapid development.
+Elixir/Phoenix starter kit for modern development.
 
 Version: 0.1.9
 
