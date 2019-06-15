@@ -10,7 +10,15 @@ defmodule Api.Mixfile do
       compilers: [:phoenix, :gettext, :phoenix_swagger] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      test_coverage: [tool: ExCoveralls],
+
+      # Docs
+      name: "RealWorld",
+      source_url: "https://github.com/PetrNikolas/blazeee",
+      homepage_url: "https://github.com/PetrNikolas/blazeee",
+      # The main page in the docs
+      docs: [main: "README", extras: ["README.md"]]
     ]
   end
 
@@ -34,7 +42,6 @@ defmodule Api.Mixfile do
       {:phoenix, "~> 1.4.8"},
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 4.0"},
-      # {:phoenix_ecto, ">= 3.2.0 and < 3.5.0"},
       {:ecto_sql, "~> 3.0-rc.1"},
       {:postgrex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.10"},
@@ -50,7 +57,10 @@ defmodule Api.Mixfile do
       {:bcrypt_elixir, "~> 1.0"},
       {:guardian, "~> 1.0"},
       {:corsica, "~> 1.0"},
+      {:excoveralls, "~> 0.7", only: [:dev, :test]},
       {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false},
+      {:ex_machina, "~> 2.0", only: :test},
+      {:ex_doc, "~> 0.16", only: :dev, runtime: false},
       {:httpoison, "~> 1.4"},
       {:git_hooks, "~> 0.3.0", only: :dev, runtime: false},
       {:phoenix_swagger, "~> 0.8"},
