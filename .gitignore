@@ -6,6 +6,7 @@
 /deps
 /*.ez
 /.elixir_ls
+/doc
 
 # Generated on crash by the VM
 erl_crash.dump

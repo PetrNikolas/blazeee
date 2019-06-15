@@ -24,6 +24,9 @@ Version: 0.1.9
 * [LogViewer](https://github.com/shufo/log_viewer)
 * [httpoison](https://github.com/edgurgel/httpoison)
 * [GitHooks](https://github.com/qgadrian/elixir_git_hooks)
+* [excoveralls](https://github.com/parroty/excoveralls)
+* [ex_machina](https://github.com/thoughtbot/ex_machina)
+* [ex_doc](https://github.com/elixir-lang/ex_doc)
 
 ## Setup project
 
@@ -121,6 +124,10 @@ You can use Gitlab CI or Travis CI (both files are here - in root of project).
 ## Documentation
 
 * You can see [DOCUMENTATION](./DOCUMENTATION.md).
+
+### Generated doc for your app
+
+* Run `mix docs` and view them at "doc/index.html".
 
 ## Learn more about Phoenix framework
 
