@@ -6,10 +6,10 @@ Version: 0.1.9
 
 ## Prerequisites
 
-* [Elixir 1.4 or later](https://elixir-lang.org/)
-* [Erlang 18 or later](https://www.erlang.org/)
+* [Elixir 1.7 or later](https://elixir-lang.org/)
+* [Erlang 21 or later](https://www.erlang.org/)
 * [Phoenix framework](https://phoenixframework.org/)
-* [Node.js (>= 5.0.0)](https://nodejs.org/en/)
+* [Node.js (>= 8.0.0)](https://nodejs.org/en/)
 * [PostgreSQL](https://www.postgresql.org/)
 
 ## Libs
