@@ -35,7 +35,8 @@ To start your Phoenix server:
 
 NOTE: These types of errors can usually be resolved by running mix clean. You may also see this type of error during Live code reload in dev. It case, try restarting the Phoenix.Server, and if that does not help, run mix clean
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+* Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+* Log Viewer is avalaible on [`localhost:5900`](http://localhost:5900).
 
 ## Production deploy
 

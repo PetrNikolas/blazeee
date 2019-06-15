@@ -26,6 +26,9 @@ config :api, ApiWeb.Guardian,
   issuer: "myApi",
   secret_key: "s6O36Q2DtK/sODiSaOtrHROakNiEHxqUkjnVGw6cvTk33wR0wo1e4s7et9X5NRn3"
 
+# Configure bcrypt for passwords
+config :comeonin, :bcrypt_log_rounds, 4
+
 # Swagger
 config :api, :phoenix_swagger,
   swagger_files: %{
