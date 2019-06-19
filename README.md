@@ -32,11 +32,11 @@ Version: 0.1.9
 
 To start your Phoenix server:
 
-* Install dependencies with `mix deps.get`
-* Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-* Start Phoenix endpoint with `mix phx.server`
+* Install dependencies with `mix deps.get`.
+* Create and migrate your database with `mix ecto.create && mix ecto.migrate`.
+* Start Phoenix app with `mix phx.server` or you can also run your app inside IEx (Interactive Elixir) with `iex -S mix phx.server`.
 
-NOTE: These types of errors can usually be resolved by running mix clean. You may also see this type of error during Live code reload in dev. It case, try restarting the Phoenix.Server, and if that does not help, run mix clean
+NOTE: These types of errors can usually be resolved by running mix clean. You may also see this type of error during Live code reload in dev. It case, try restarting the Phoenix.Server, and if that does not help, run mix clean.
 
 * Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 * Log Viewer is avalaible on [`localhost:5900`](http://localhost:5900).
