@@ -2,7 +2,7 @@
 
 Elixir/Phoenix starter kit for modern development.
 
-Version: 0.1.9
+Version: 0.2.0
 
 ## Prerequisites
 
