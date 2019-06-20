@@ -3,10 +3,13 @@ defmodule ApiWeb.Schema do
   import_types(Absinthe.Type.Custom)
 
   import_types(ApiWeb.Schema.AccountTypes)
+  import_types(ApiWeb.Schema.LogTypes)
 
   alias ApiWeb.Resolvers
 
   query do
+    # ACCOUNTS
+
     @desc "Get all users"
     field :users, non_null(list_of(non_null(:user))) do
       resolve(&Resolvers.Accounts.get_users/3)
@@ -29,6 +32,13 @@ defmodule ApiWeb.Schema do
       arg(:password_confirmation, non_null(:string))
 
       resolve(&Resolvers.Accounts.create/2)
+    end
+
+    # LOGS
+
+    @desc "Get a list of events"
+    field :events, non_null(list_of(non_null(:event))) do
+      resolve(&Resolvers.Logs.get_events/3)
     end
   end
 end
