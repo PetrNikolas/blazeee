@@ -4,7 +4,7 @@ defmodule Api.Mixfile do
   def project do
     [
       app: :api,
-      version: "0.2.2",
+      version: "0.2.3",
       elixir: "~> 1.9",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext, :phoenix_swagger] ++ Mix.compilers(),
@@ -39,7 +39,7 @@ defmodule Api.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.11"},
+      {:phoenix, "~> 1.4.12"},
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.0-rc.1"},

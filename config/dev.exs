@@ -51,6 +51,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :api, Api.Repo,
   adapter: Ecto.Adapters.Postgres,
-  database: "blazeee_api_dev",
+  username: System.get_env("POSTGRES_USER") || "postgres",
+  password: System.get_env("POSTGRES_PASSWORD") || "postgres",
+  database: "blazeee_dev",
   hostname: "localhost",
   pool_size: 10
